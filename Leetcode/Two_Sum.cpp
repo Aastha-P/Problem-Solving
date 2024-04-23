@@ -1,40 +1,39 @@
-// *********By Array**********
-// #include <iostream>
-// int main()
-// {
-//     int target, n;
+//*********By Array**********
+#include <iostream>
+int main()
+{
+    int target, n;
 
-//     std::cout << "value of n:";
-//     std::cin >> n;
-//     int num[n];
-//     for (int j = 0; j < n; j++)
-//     {
-//         std::cout << "numbers:";
-//         std::cin >> num[j];
-//     }
+    std::cout << "value of n:";
+    std::cin >> n;
+    int num[n];
+    for (int j = 0; j < n; j++)
+    {
+        std::cout << "numbers:";
+        std::cin >> num[j];
+    }
 
-//     std::cout << "target:";
-//     std::cin >> target;
-//     for (int i = 0; i < n; i++)
-//     {
-//         for (int k = i + 1; k < n; k++)
-//         {
-//             if (target == (num[i] + num[k]))
-//             {
+    std::cout << "target:";
+    std::cin >> target;
+    for (int i = 0; i < n; i++)
+    {
+        for (int k = i + 1; k < n; k++)
+        {
+            if (target == (num[i] + num[k]))
+            {
 
-//                 std::cout << "[" << i << "," << k << "]";
-//             }
-//         }
-//     }
-//     // delete[] num; // deallocate memory
+                std::cout << "[" << i << "," << k << "]";
+            }
+        }
+    }
+    // delete[] num; // deallocate memory
 
-//     return 0;
-// }
+    return 0;
+}
 
 // ************BY Vector************
 #include <iostream>
 #include <vector>
-
 using namespace std;
 
 vector<int> twoSum(vector<int> nums, int target)
@@ -54,21 +53,23 @@ vector<int> twoSum(vector<int> nums, int target)
 
 int main()
 {
-    vector<int> nums = {11, 7, 2, 15};
-    cout << "Numbers: ";
-    for (int i = 0; i < nums.size(); i++)
-    {
-        cout << nums[i] << ",";
-    }
-    cout << endl;
+    vector<int> nums = {11, 3, 5, 6, 7};
 
     int target = 9;
-    cout << "Target:" << target << endl;
 
     vector<int> result = twoSum(nums, target);
 
     if (!result.empty())
     {
+        cout << "Numbers: ";
+        for (int i = 0; i < nums.size(); i++)
+        {
+            cout << nums[i] << ",";
+        }
+        cout << endl;
+
+        cout << "Target: " << target << endl;
+
         cout << "Indices: "
              << "[" << result[0] << "," << result[1] << "]" << endl;
     }
