@@ -1,4 +1,6 @@
-// Here we check if a number is palindrome number or not(case - if number is negative it not be a palindrome number)
+// Here we check if a number is palindrome number or not.
+// case - if number is negative it not be a palindrome number.
+// If number is palindrome output is True otherwise False.
 #include <iostream>
 using namespace std;
 int main()
