@@ -32,3 +32,50 @@
 // }
 
 // ************BY Vector************
+#include <iostream>
+#include <vector>
+
+using namespace std;
+
+vector<int> twoSum(vector<int> nums, int target)
+{
+    for (int i = 0; i < nums.size(); i++)
+    {
+        for (int j = i + 1; j < nums.size(); j++)
+        {
+            if (target == (nums[i] + nums[j]))
+            {
+                return {i, j};
+            }
+        }
+    }
+    return {};
+}
+
+int main()
+{
+    vector<int> nums = {11, 7, 2, 15};
+    cout << "Numbers: ";
+    for (int i = 0; i < nums.size(); i++)
+    {
+        cout << nums[i] << ",";
+    }
+    cout << endl;
+
+    int target = 9;
+    cout << "Target:" << target << endl;
+
+    vector<int> result = twoSum(nums, target);
+
+    if (!result.empty())
+    {
+        cout << "Indices: "
+             << "[" << result[0] << "," << result[1] << "]" << endl;
+    }
+    else
+    {
+        cout << "No two elements sum up to the target." << endl;
+    }
+
+    return 0;
+}
