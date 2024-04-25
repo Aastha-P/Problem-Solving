@@ -49,7 +49,7 @@ int main()
         if (i + 1 <= sizeof(s))
         {
             s2 = roman_to_int(s[i + 1]);
-                }
+        }
     }
     return 0;
 }
