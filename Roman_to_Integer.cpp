@@ -33,7 +33,7 @@ int roman_to_int(char s)
         return 1000;
     }
 
-    return -1;
+    return 0;
 }
 int main()
 {
@@ -41,15 +41,33 @@ int main()
     cout << "Roman number: ";
     cin >> s;
 
-    int s1, s2, i;
-    for (i = 0; i < sizeof(s); i++)
+    int s1, s2, i, res = 0;
+
+    for (i = 0; i < s.length(); i++)
     {
+
         s1 = roman_to_int(s[i]);
 
-        if (i + 1 <= sizeof(s))
+        if (i + 1 <= s.length())
         {
             s2 = roman_to_int(s[i + 1]);
+            if (s1 >= s2)
+            {
+                res += s1;
+            }
+            else
+            {
+                res -= s1;
+            }
         }
+    }
+    if (s1 == 0)
+    {
+        cout << "write correct characters to convert roman to integer.";
+    }
+    else
+    {
+        cout << res;
     }
     return 0;
 }
