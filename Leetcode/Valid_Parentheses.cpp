@@ -17,7 +17,7 @@ int main()
     cout << "String: ";
     cin >> s;
 
-    for (int i = 0; i < s.size(); i++)
+    for (int i = 0; i < s.length(); i++)
     {
         if (s[i] == '(' || s[i] == '{' || s[i] == '[')
         {
@@ -27,25 +27,31 @@ int main()
         {
             if (str.empty())
             {
-                return false;
+                cout << "no parentheses are push in stack." << endl;
+                return 1;
             }
             if (ismatch(str.top(), s[i]))
             {
                 str.pop();
+                cout << "find matched parentheses." << endl;
             }
             else
             {
-                return false;
+                cout << "Unbalanced parentheses/braces/brackets." << endl;
+                return 1;
             }
         }
     }
     if (str.empty())
     {
-        return true;
+        cout << "Empty Stack (all parentheses are matched)." << endl;
+        return 1;
     }
     else
     {
-        return false;
+        cout << "Not empty stack (all parentheses are not matched)." << endl;
+        return 1;
     }
-    return 0;
 }
+
+// This code applicable for example-  "()", "{}", "[]", "[{()}]",
