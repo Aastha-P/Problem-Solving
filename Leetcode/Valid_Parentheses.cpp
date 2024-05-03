@@ -28,7 +28,7 @@ int main()
             if (str.empty())
             {
                 cout << "no parentheses are push in stack." << endl;
-                return 1;
+                // return 1;
             }
             if (ismatch(str.top(), s[i]))
             {
@@ -38,20 +38,21 @@ int main()
             else
             {
                 cout << "Unbalanced parentheses/braces/brackets." << endl;
-                return 1;
+                // return 1;
             }
         }
     }
     if (str.empty())
     {
         cout << "Empty Stack (all parentheses are matched)." << endl;
-        return 1;
+        // return 1;
     }
     else
     {
         cout << "Not empty stack (all parentheses are not matched)." << endl;
-        return 1;
+        // return 1;
     }
+    return 0;
 }
 
 // This code applicable for example-  "()", "{}", "[]", "[{()}]",
