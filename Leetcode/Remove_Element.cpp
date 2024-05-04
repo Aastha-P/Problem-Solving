@@ -1,16 +1,12 @@
 #include <iostream>
 #include <vector>
 using namespace std;
+
 class Solution
 {
 public:
     int removeElement(vector<int> &nums, int val)
     {
-        if (nums.size() == 0)
-        {
-            return 0;
-        }
-
         int i = 0;
         for (int j = 0; j < nums.size(); j++)
         {
@@ -26,8 +22,17 @@ public:
 
 int main()
 {
-    vector<int> nums = {2, 3, 4, 3, 5};
-    Solution s(nums);
-    s.removeElement(nums, 3);
+    vector<int> nums = {2, 3, 5, 4, 3, 5};
+    Solution s;
+    int newSize = s.removeElement(nums, 5);
+
+    cout << "New Size: " << newSize << endl;
+    cout << "Remaining elements: ";
+    for (int i = 0; i < newSize; i++)
+    {
+        cout << nums[i] << ",";
+    }
+    cout << endl;
+
     return 0;
 }
