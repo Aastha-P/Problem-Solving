@@ -23,10 +23,9 @@ public:
         return i + 1;
     }
 };
-
 int main()
 {
-    vector<int> nums = {3, 4, 3, 5, 2, 6, 3};
+    vector<int> nums = {3, 4, 3, 4, 5, 2, 6, 3};
     Solution s;
     int newNum = s.removeDuplicates(nums);
 
@@ -34,9 +33,28 @@ int main()
     cout << "Remaining elements: ";
     for (int i = 0; i < newNum; i++)
     {
-        cout << nums[i + 1] << ",";
+        cout << nums[i];
+        if (i != newNum - 1)
+            cout << ",";
     }
     cout << endl;
 
     return 0;
 }
+
+// int main()
+// {
+//     vector<int> nums = {3, 4, 3, 5, 4, 2, 6, 3};
+//     Solution s;
+//     int newNum = s.removeDuplicates(nums);
+
+//     cout << "New Size: " << newNum << endl;
+//     cout << "Remaining elements: ";
+//     for (int i = 0; i < newNum; i++)
+//     {
+//         cout << nums[i] << ",";
+//     }
+//     cout << endl;
+
+//     return 0;
+// }
