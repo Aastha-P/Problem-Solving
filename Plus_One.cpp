@@ -1,3 +1,5 @@
+#include <iostream>
+#include <vector>
 class Solution
 {
 public:
@@ -23,3 +25,7 @@ public:
         return digits;
     }
 };
+
+int main()
+{
+}
