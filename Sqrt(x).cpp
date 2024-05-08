@@ -1,3 +1,4 @@
+#include <iostream>
 class Solution
 {
 public:
@@ -6,3 +7,8 @@ public:
         return sqrt(int(x));
     }
 };
+int main()
+{
+    Solution s;
+    return 0;
+}
