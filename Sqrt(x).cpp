@@ -1,4 +1,5 @@
 #include <iostream>
+#include <cmath>
 class Solution
 {
 public:
@@ -10,5 +11,6 @@ public:
 int main()
 {
     Solution s;
+    s.mySqrt(4);
     return 0;
 }
