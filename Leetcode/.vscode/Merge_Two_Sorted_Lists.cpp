@@ -59,3 +59,9 @@ public:
         return third;
     }
 };
+
+int main()
+{
+    Solution s;
+    return 0;
+}
