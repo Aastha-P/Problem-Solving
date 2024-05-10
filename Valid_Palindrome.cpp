@@ -33,7 +33,7 @@ public:
 int main()
 {
     Solution s;
-    string str = s.isPalindrome("A man, a plan, a canal: Panama");
+    string str = s.isPalindrome("Amama");
 
     return 0;
 }
