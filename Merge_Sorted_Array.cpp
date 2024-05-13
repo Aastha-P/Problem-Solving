@@ -31,4 +31,5 @@ public:
 };
 int main()
 {
+    Solution
 }
