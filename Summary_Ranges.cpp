@@ -38,6 +38,7 @@ public:
                             if (start == nums[i])
                                 ans.push_back(to_string(start));
                             else
+
                                 ans.push_back(to_string(start) + "->" + to_string(nums[i]));
                         }
 
