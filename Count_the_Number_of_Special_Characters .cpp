@@ -21,3 +21,4 @@ public:
         return c;
     }
 };
+int main()
