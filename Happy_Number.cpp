@@ -20,3 +20,6 @@ public:
             return isHappy(sum);
     }
 };
+int main()
+{
+}
