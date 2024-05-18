@@ -6,3 +6,6 @@ public:
         return n >= 0 && __builtin_popcount(n) == 1;
     }
 };
+int main()
+{
+}
