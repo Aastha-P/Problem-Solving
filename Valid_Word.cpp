@@ -1,3 +1,5 @@
+#include <iostream>
+#
 class Solution
 {
 public:
@@ -40,3 +42,7 @@ public:
     }
 };
 int main()
+{
+    Solution s;
+    return 0;
+}
