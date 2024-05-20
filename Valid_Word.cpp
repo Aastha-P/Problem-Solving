@@ -40,5 +40,6 @@ public:
 int main()
 {
     Solution s;
+    s.isValid('b3');
     return 0;
 }
