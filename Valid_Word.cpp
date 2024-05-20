@@ -41,7 +41,7 @@ public:
 int main()
 {
     Solution s;
-    bool result = s.isValid("b3");
+    bool result = s.isValid("b5A");
     if (result)
     {
         cout << "true";
