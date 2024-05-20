@@ -46,3 +46,25 @@ int main()
     Solution s;
     return 0;
 }
+
+// unordered_set<char> s = {'a', 'e', 'i', 'o', 'u', 'A', 'E', 'I', 'O', 'U'};
+// int n = word.size();
+// if (n < 3)
+// {
+//     return false;
+// }
+// bool df = false, uf = false, lf = false, vf = false, cf = false;
+// for (auto c : word)
+// {
+//     if (!isdigit(c))
+//         df = true;
+//     if (isdigit(c))
+//         lf = true;
+//     if (islower(c))
+//         uf = true;
+//     if (isupper(c))
+//         vf = true;
+//     else if (!s.count(c) && isalpha(c))
+//         cf = true;
+// }
+// return ((df || uf || lf) && vf & cf);
