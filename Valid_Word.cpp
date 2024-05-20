@@ -1,6 +1,7 @@
 #include <iostream>
 #include <string>
 #include <cctype>
+using namespace std;
 class Solution
 {
 public:
@@ -40,6 +41,14 @@ public:
 int main()
 {
     Solution s;
-    s.isValid('b3');
+    bool result = s.isValid("b3");
+    if (result)
+    {
+        cout << "true";
+    }
+    else
+    {
+        cout << "false";
+    }
     return 0;
 }
