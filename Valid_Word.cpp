@@ -37,3 +37,6 @@ public:
         return hasVowel && hasConsonant;
     }
 };
+int main()
+{
+}
