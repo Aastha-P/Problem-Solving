@@ -21,6 +21,7 @@ public:
 int main()
 {
     Solution s;
-    char rev = s.reverseString();
+    char rev = s.reverseString("hello");
+    cout << rev;
     return 0;
 }
