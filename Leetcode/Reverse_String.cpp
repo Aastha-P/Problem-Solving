@@ -20,8 +20,13 @@ public:
 };
 int main()
 {
-    Solution s;
-    char rev = s.reverseString("hello");
-    cout << rev;
+    Solution so;
+    vector<char> s = {'h', 'e', 'l'};
+    so.reverseString(s);
+
+    for (char c : s)
+    {
+        cout << c;
+    }
     return 0;
 }
