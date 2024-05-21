@@ -21,5 +21,6 @@ public:
 int main()
 {
     Solution s;
+    char rev = s.reverseString();
     return 0;
 }
