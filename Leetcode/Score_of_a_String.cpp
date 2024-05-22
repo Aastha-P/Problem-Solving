@@ -17,7 +17,7 @@ public:
 int main()
 {
     Solution s;
-    char result = s.scoreOfString("hello");
-    cout << result;
+    char result = s.scoreOfString("zaz");
+    cout << int(result);
     return 0;
 }
