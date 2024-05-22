@@ -1,3 +1,6 @@
+#include <iostream>
+#include <string>
+using namespace std;
 class Solution
 {
 public:
@@ -11,3 +14,8 @@ public:
         return count;
     }
 };
+int main()
+{
+    Solution s;
+    return 0;
+}
