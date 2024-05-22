@@ -17,6 +17,7 @@ public:
 int main()
 {
     Solution s;
-
+    char result = s.scoreOfString("hello");
+    cout << result;
     return 0;
 }
