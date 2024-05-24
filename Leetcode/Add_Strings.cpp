@@ -6,29 +6,27 @@ class Solution
 public:
     string addStrings(string num1, string num2)
     {
-        int c1 = 0, c2 = 0, carry = 0, sum = 0;
-        long long count = 0;
+        int i = num1.size() - 1;
+        int j = num2.size() - 1;
+        int carry = 0;
         string result = "";
-        for (auto ch : num1)
+
+        while (i >= 0 || j >= 0 || carry)
         {
-            c1 = (c1 * 10) + (ch - '0');
-        }
-        for (auto sh : num2)
-        {
-            c2 = (c2 * 10) + (sh - '0');
-        }
-        for (int i = 0; i < c1.size(); i++)
-        {
-            for (int j = 0; j < c2.size(); j++)
+            int sum = carry;
+            if (i >= 0)
             {
-                sum = carry;
-                count += c1[i] + c2[j] + carry;
-                carry = count / 10;
-                count %= 10;
+                sum += num1[i] - '0';
+                i--;
             }
+            if (j >= 0)
+            {
+                sum += num2[j] - '0';
+                j--;
+            }
+            carry = sum / 10;
+            result.push_back(sum % 10 + '0');
         }
-        result += to_string(count);
-        return result;
     }
 };
 
