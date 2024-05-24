@@ -33,7 +33,7 @@ public:
 int main()
 {
     Solution s;
-    string ret = s.addStrings("123", "321");
+    char ret = s.addStrings("123", "321");
     cout << ret;
     return 0;
 }
