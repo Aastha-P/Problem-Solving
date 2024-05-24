@@ -33,5 +33,6 @@ public:
 int main()
 {
     Solution s;
+    s.addStrings();
     return 0;
 }
