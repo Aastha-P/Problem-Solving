@@ -37,6 +37,7 @@ public:
 int main()
 {
     Solution s;
-    char ret = s.reverseVowels("hello");
+    string ret = s.reverseVowels("hello");
+    cout << ret;
     return 0;
 }
