@@ -1,5 +1,6 @@
 #include <iostream>
 #include <string>
+#include <algorithm>
 using namespace std;
 class Solution
 {
@@ -27,13 +28,15 @@ public:
             carry = sum / 10;
             result.push_back(sum % 10 + '0');
         }
+        reverse(result.begin(), result.end());
+        return result;
     }
 };
 
 int main()
 {
     Solution s;
-    char ret = s.addStrings("123", "321");
+    string ret = s.addStrings("123", "321");
     cout << ret;
     return 0;
 }
