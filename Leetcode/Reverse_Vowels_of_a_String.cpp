@@ -33,3 +33,10 @@ public:
         return s;
     }
 };
+
+int main()
+{
+    Solution s;
+    char ret = s.reverseVowels("hello");
+    return 0;
+}
