@@ -20,7 +20,7 @@ public:
 int main()
 {
     Solution s;
-    int ret = s.sumOfMultiples(6);
+    int ret = s.sumOfMultiples(7);
     cout << ret;
     return 0;
 }
