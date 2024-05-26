@@ -19,4 +19,8 @@ public:
 
 int main()
 {
+    Solution s;
+    int ret = s.sumOfMultiples(6);
+    cout << ret;
+    return 0;
 }
