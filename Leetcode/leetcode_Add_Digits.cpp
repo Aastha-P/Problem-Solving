@@ -9,3 +9,7 @@ public:
         return 1 + (num - 1) % 9;
     }
 };
+int main()
+{
+    Solution s;
+}
