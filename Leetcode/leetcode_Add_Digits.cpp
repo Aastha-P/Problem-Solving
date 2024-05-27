@@ -12,4 +12,10 @@ public:
 int main()
 {
     Solution s;
+    int n;
+    cout << "enter number: ";
+    cin >> n;
+    int ret = s.addDigits(n);
+    cout << ret;
+    return 0;
 }
