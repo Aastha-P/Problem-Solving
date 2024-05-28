@@ -14,3 +14,8 @@ public:
         return x;
     }
 };
+int main()
+{
+    Solution s;
+    return 0;
+}
