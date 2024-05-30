@@ -14,3 +14,7 @@ public:
         return i == 0 ? -1 : s1.length() + s2.length() + s3.length() - i * 3;
     }
 };
+
+int main()
+{
+}
