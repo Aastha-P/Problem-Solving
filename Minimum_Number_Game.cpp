@@ -13,3 +13,8 @@ public:
         return nums;
     }
 };
+
+int main()
+{
+    Solution s;
+}
