@@ -1,4 +1,3 @@
-// Minimum Number Game
 #include <iostream>
 #include <vector>
 using namespace std;
