@@ -19,3 +19,5 @@ public:
         return n == 1;
     }
 };
+
+int main()
