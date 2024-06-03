@@ -21,3 +21,9 @@ public:
 };
 
 int main()
+{
+    Solution s;
+    bool ret = s.isUgly(14);
+    cout << ret;
+    return 0;
+}
