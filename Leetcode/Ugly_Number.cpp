@@ -24,6 +24,6 @@ int main()
 {
     Solution s;
     bool ret = s.isUgly(14);
-    cout << ret;
+    cout << (ret ? "true" : "false") << endl;
     return 0;
 }
